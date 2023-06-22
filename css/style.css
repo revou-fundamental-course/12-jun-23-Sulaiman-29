@@ -54,7 +54,7 @@ button:active{
 }
 
 /* MARK ID */
-#inputField{
+#Celcius{
     outline: none;
     font-size: 18px;
     border-radius: 8px;
@@ -62,9 +62,22 @@ button:active{
     border: solid grey;
 }
 
-#inputField:focus{
+#Celcius:focus{
     border: solid rgb(99, 1, 1);
 }
+
+#Fahrenheit{
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px;
+    border: solid grey;
+}
+
+#Fahrenheit:focus{
+    border: solid rgb(99, 1, 1);
+}
+
 
 /* MARK Class */
 .btn2{
