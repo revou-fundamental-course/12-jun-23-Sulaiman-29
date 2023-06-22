@@ -1,15 +1,36 @@
-const numberRegex = /^[0-9]+$/;
-const inputField = document.getElementById("inputField")
-const result = document.getElementById("result")
+let celsiusInput = document.querySelector('#celsius > input')
+let fahrenheitInput = document.querySelector('#fahrenheit > input')
+let kelvinInput = document.querySelector('#kelvin > input')
 
-inputField.addEventListener('keypress', function(event){
-    if (!numberRegex.test(event.key)) {
-        console.log(event.key)
-        event.preventDefault()
-    } else {
-        result.textContent = event.key
-        result.style.display = 'inline'
-    }
+let btn = document.querySelector('.button button')
+
+
+function roundNumber(number){
+    return Math.round(number*100)/100
+}
+
+
+/* Celcius to Fahrenheit */
+celsiusInput.addEventListener('input', function(){
+    let cTemp = parseFloat(celsiusInput.value)
+    let fTemp = (cTemp*(9/5)) + 32
+
+    fahrenheitInput.value = roundNumber(fTemp)
 })
 
 
+/* Fahrenheit to Celcius */
+fahrenheitInput.addEventListener('input', function(){
+    let fTemp = parseFloat(fahrenheitInput.value)
+    let cTemp = (fTemp - 32) * (5/9)
+    let kTemp = (fTemp -32) * (5/9) + 273.15
+
+    celsiusInput.value = roundNumber(cTemp)
+})
+
+
+
+btn.addEventListener('click', ()=>{
+    celsiusInput.value = ""
+    fahrenheitInput.value = ""
+})
