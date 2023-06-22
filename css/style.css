@@ -1,0 +1,83 @@
+/* MARK DEFAULT */
+body{
+    background-color:#66347F ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #37306B;
+    color: antiquewhite;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+
+}
+section{
+    position: relative;
+    padding: 60px 50px 40px 50px;
+    background-color: #37306B;
+    border-radius: 20px;
+    
+}
+
+label{
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input{
+    background-color:rgb(168, 166, 166);
+    
+}
+
+button{
+    background-color: #9E4784;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 3px;
+    
+    
+}
+
+button:hover{
+    background-color: rgb(102, 102, 241);
+}
+
+button:active{
+    transform: translateY(1px);
+    background-color: rgb(126, 126, 226);
+}
+
+/* MARK ID */
+#inputField{
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px;
+    border: solid grey;
+}
+
+#inputField:focus{
+    border: solid rgb(99, 1, 1);
+}
+
+/* MARK Class */
+.btn2{
+    margin-inline: 10px;
+}
+
+
+.inputSection{
+    display: flex;
+    flex-direction: column;
+}
+.InputButtonSection{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
